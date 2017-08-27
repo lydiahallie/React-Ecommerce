@@ -1,3 +1,22 @@
 .header {
+  height: 20em;
   background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 20em;
+  background-color: orange;
+  margin: 0;
+  height: 2em;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  margin: 0 1em;
 }
