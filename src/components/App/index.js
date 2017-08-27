@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // Externals
 import Cart from '../Cart';
-import Items from '../Items';
+import Products from '../Products';
 // Internals
 import './index.css';
 
@@ -11,21 +11,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      items: [],
+      cartProducts: [],
     };
   }
 
-  addItemToCart = (item) => {
-    const { items } = this.state;
-    items.push(item);
-    this.setState({ items });
+  addItemToCart = (product) => {
+    const { cartProducts } = this.state;
+    cartProducts.push(product);
+    this.setState({ cartProducts });
   }
 
   render() {
+    console.log('products', this.state.cartProducts);
     return(
       <div>
-        <Items addItemToCart={this.addItemToCart} />
-        <Cart items={this.state.items}/>
+        <Products addItemToCart={this.addItemToCart} />
+        <Cart products={this.state.cartProducts} />
       </div>
     );
   }
