@@ -1,52 +1,38 @@
-import React, { Component, PropTypes } from 'react';
+// Dependencies
+import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import products from "../Data/index.js";
+import PropTypes from 'prop-types';
+import map from 'lodash/map';
+// Externals
+import PRODUCTS from '../Data';
+// Internals
+import './styles.css';
 
-export default class Items extends Component {
+
+class Products extends Component {
   static propTypes = {
     addItemToCart: PropTypes.func.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      decription: "",
-      price: 0,
-      img: ""
-    }
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.props.addItemToCart(this.state);
-    this.setState({
-      name: {product.name},
-      description: {product.description},
-      price: {product.price},
-      img: {product.img}
-    })
+  addProduct = (product) => {
+    this.props.addItemToCart(product);
   }
 
   render() {
-    let items = products.map((product)=> {
-      return (
-        <div key={product.id} className={product.name}>
-          <form onSubmit={this.handleSubmit}>
-            <NavLink activeClassName="selected" className="navlink" to={`/${product.name}`}>
-              <h1>{product.name}</h1>
-              <h4>{product.description}</h4>
-              <h5>{product.price}</h5>
-              <img src={product.img} alt={product.name}/>
-              </NavLink>
-            <button type="submit">Add Item to Cart</button>
-          </form>
-        </div>
-      )});
     return (
       <div className="items">
-        {items}
+        {map(PRODUCTS, (product)=> (
+          <div key={product.id} className={product.name}>
+            <h1>{product.name}</h1>
+            <h4>{product.description}</h4>
+            <h5>{product.price}</h5>
+            <img alt={product.name} src={product.img} />
+            <button onClick={() => this.addProduct(product)}>Add Item to Cart</button>
+          </div>
+        ))}
       </div>
     );
   }
 }
+
+export default Products;
