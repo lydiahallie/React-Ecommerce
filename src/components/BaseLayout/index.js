@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './styles.css';
 import { NavLink } from 'react-router-dom';
-import Home from '../Home';
 import Contact from '../Contact';
 
 export default class BaseLayout extends Component {
