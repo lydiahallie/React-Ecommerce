@@ -1,8 +1,14 @@
+// Dependencies
 import React, { Component, PropTypes } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import map from 'lodash/map';
+// Externals
 import products from "../Data/index.js";
+// Internals
+import './index.css';
 
-export default class Items extends Component {
+
+class Items extends Component {
   static propTypes = {
     addItemToCart: PropTypes.func.isRequired,
   };
@@ -10,11 +16,11 @@ export default class Items extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      decription: "",
+      name: '',
+      decription: '',
       price: 0,
-      img: ""
-    }
+      img: '',
+    };
   }
 
   handleSubmit = (event) => {
@@ -29,24 +35,24 @@ export default class Items extends Component {
   }
 
   render() {
-    let items = products.map((product)=> {
-      return (
-        <div key={product.id} className={product.name}>
-          <form onSubmit={this.handleSubmit}>
-            <NavLink activeClassName="selected" className="navlink" to={`/${product.name}`}>
-              <h1>{product.name}</h1>
-              <h4>{product.description}</h4>
-              <h5>{product.price}</h5>
-              <img src={product.img} alt={product.name}/>
-              </NavLink>
-            <button type="submit">Add Item to Cart</button>
-          </form>
-        </div>
-      )});
     return (
       <div className="items">
-        {items}
+        {map(products, (product)=> (
+          <div key={product.id} className={product.name}>
+            <form onSubmit={this.handleSubmit}>
+              <NavLink activeClassName="selected" className="navlink" to={`/${product.name}`}>
+                <h1>{product.name}</h1>
+                <h4>{product.description}</h4>
+                <h5>{product.price}</h5>
+                <img src={product.img} alt={product.name} />
+              </NavLink>
+              <button type="submit">Add Item to Cart</button>
+            </form>
+          </div>
+        ))}
       </div>
     );
   }
 }
+
+export default Items;
