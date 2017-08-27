@@ -1,0 +1,8 @@
+.header {
+  height: 20em;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}

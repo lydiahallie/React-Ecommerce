@@ -1,13 +1,4 @@
-.header {
-  height: 20em;
-  background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Quicksand', sans-serif;
-}
-
-ul {
+.navbar ul {
   display: flex;
   list-style: none;
   width: 20em;
@@ -18,7 +9,7 @@ ul {
   font-family: 'Quicksand', sans-serif;
 }
 
-li a {
+.navbar li a {
   text-decoration: none;
   margin: 0 1em;
 }

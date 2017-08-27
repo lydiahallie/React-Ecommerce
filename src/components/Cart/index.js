@@ -1,6 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+// Dependencies
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+// Internals
+import './index.css';
 
-export default class Cart extends Component {
+
+class Cart extends Component {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
@@ -8,9 +13,7 @@ export default class Cart extends Component {
   render() {
     return(
       <div>
-        <div>
-          <h1>My Cart</h1>
-        </div>
+        <h1>My Cart</h1>
         <div className="result-item">
           <h4>{this.props.items}</h4>
         </div>
@@ -18,3 +21,5 @@ export default class Cart extends Component {
     )
   }
 }
+
+export default Cart;
