@@ -1,6 +1,6 @@
-// Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import map from 'lodash/map';
 // Internals
 import './index.css';
 
@@ -12,10 +12,14 @@ class Cart extends Component {
 
   render() {
     return(
-      <div>
+      <div className="cart">
         <h1>My Cart</h1>
-        <div className="result-item">
-          <h4>{this.props.items}</h4>
+        <div className="cart-items">
+          {map(this.props.products, (product, index) => (
+            <div className="cart-item" key={`${product.id}${index}`}>
+              <p>{product.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     )
