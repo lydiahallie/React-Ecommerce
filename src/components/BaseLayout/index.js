@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Contact from '../Contact';
 import Navbar from './components/NavBar';
 import Header from './components/Header';
-
+import './index.css';
 
 
 class BaseLayout extends Component {

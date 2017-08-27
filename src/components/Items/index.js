@@ -1,12 +1,9 @@
 // Dependencies
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
-// Externals
 import PRODUCTS from '../Data';
-// Internals
-import './styles.css';
+import './index.css';
 
 
 class Products extends Component {

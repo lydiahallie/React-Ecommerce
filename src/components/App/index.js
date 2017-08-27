@@ -1,6 +1,8 @@
+// Dependencies
 import React, { Component } from 'react';
 import Cart from '../Cart';
 import Products from '../Items';
+import './index.css';
 
 class App extends Component {
   constructor() {
