@@ -10,20 +10,22 @@ class Cart extends Component {
     products: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      price: 0,
+      price: 0
     }
   }
 
-  getTotalPrice = () => (
+  componentDidMount() {
     this.handleTotalChange()
-  )
+  }
 
   handleTotalChange = () => {
-    map(this.props.cartProducts, (cartProduct,index) => (
-      this.setState({price: this.state.price + cartProduct.price})
+    map(this.state.products, (cartProduct,index) => (
+      this.setState({
+        price: this.state.price + cartProduct.price,
+      })
     ))
   }
 
@@ -41,7 +43,7 @@ class Cart extends Component {
           ))}
         </div>
         <div className="total-price">
-          <h5>Total price: {this.getTotalPrice}</h5>
+          {<h5>Total price: {this.getTotalPrice}</h5>}
         </div>
       </div>
     )

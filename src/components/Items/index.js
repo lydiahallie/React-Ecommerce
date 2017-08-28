@@ -13,6 +13,10 @@ class Products extends Component {
     this.props.addProductToCart(product);
   }
 
+  getPrice = () => {
+    this.props.getTotalPrice()
+  }
+
   render() {
     return (
       <div className="items">
