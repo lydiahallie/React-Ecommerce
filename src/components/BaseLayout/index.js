@@ -11,8 +11,10 @@ class BaseLayout extends Component {
   render() {
     return(
       <div>
-        <Header />
-        <Navbar />
+        <div className="wrapper-header">
+          <Navbar />
+          <Header />
+        </div>
         <div className="content">{this.props.children}</div>
       </div>
     )

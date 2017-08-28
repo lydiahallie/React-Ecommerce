@@ -4,31 +4,11 @@ import map from 'lodash/map';
 // Internals
 import './index.css';
 
-
 class Cart extends Component {
   static propTypes = {
     products: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
-
-  constructor() {
-    super();
-    this.state = {
-      price: 0
-    }
-  }
-
-  componentDidMount() {
-    this.handleTotalChange()
-  }
-
-  handleTotalChange = () => {
-    map(this.state.products, (cartProduct,index) => (
-      this.setState({
-        price: this.state.price + cartProduct.price,
-      })
-    ))
-  }
-
+  
   render() {
     return(
       <div className="cart">
@@ -43,7 +23,7 @@ class Cart extends Component {
           ))}
         </div>
         <div className="total-price">
-          {<h5>Total price: {this.getTotalPrice}</h5>}
+          <h5>Total price: {this.getTotalPrice}</h5>
         </div>
       </div>
     )

@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from './components/App';
 import Contact from './components/Contact';
+import Cart from './components/Cart';
 import BaseLayout from './components/BaseLayout';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -15,7 +16,7 @@ ReactDOM.render(
     <BaseLayout>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/cart" component={Cart} />
       </Switch>
     </BaseLayout>
   </BrowserRouter>

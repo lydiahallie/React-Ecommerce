@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "amazon-product-api": "^0.4.4",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-materialize": "^1.0.10",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.11"
   },

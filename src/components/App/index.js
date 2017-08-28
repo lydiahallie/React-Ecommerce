@@ -25,7 +25,6 @@ class App extends Component {
       <div>
         <div className="content">
           <Products addProductToCart={this.addProductToCart} />
-          <Cart products={this.state.cartProducts} />
         </div>
       </div>
     );

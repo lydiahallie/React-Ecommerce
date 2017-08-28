@@ -1,8 +1,28 @@
 .header {
-  height: 20em;
-  background-color: pink;
+  height: 40em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+#header-title {
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.links-header {
+  display: flex;
+}
+
+p a {
+  color: black;
+  text-decoration: none;
+  padding: 0 1em;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 1em;
+  padding: 1em 2em;
+  border-radius: 5px;
 }

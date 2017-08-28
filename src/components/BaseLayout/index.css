@@ -1,0 +1,11 @@
+.wrapper-header {
+  display: flex;
+  flex-direction: column;
+  background: url('https://cdn.pixabay.com/photo/2017/08/01/16/41/people-2566525_960_720.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  background-color: #F9F6F6;
+}

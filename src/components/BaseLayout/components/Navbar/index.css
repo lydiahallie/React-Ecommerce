@@ -1,10 +1,18 @@
+.navbar {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
-  width: 100%;
-  background-color: orange;
+  width: 90vw;
   margin: 0;
-  height: 2em;
+  height: 3em;
   align-items: center;
   font-family: 'Quicksand', sans-serif;
 }
@@ -12,4 +20,5 @@
 .navbar li a {
   text-decoration: none;
   margin: 0 1em;
+  color: white;
 }
