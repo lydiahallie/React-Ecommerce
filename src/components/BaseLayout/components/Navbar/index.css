@@ -1,7 +1,7 @@
 .navbar ul {
   display: flex;
   list-style: none;
-  width: 20em;
+  width: 100%;
   background-color: orange;
   margin: 0;
   height: 2em;

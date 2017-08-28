@@ -1,0 +1,11 @@
+.cart {
+  height: 40em;
+  width: 30em;
+  background-color: green;
+}
+
+.cart-items {
+  height: 30em;
+  background-color: blue;
+  overflow: scroll;
+}

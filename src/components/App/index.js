@@ -12,7 +12,7 @@ class App extends Component {
     };
   }
 
-  addItemToCart = (product) => {
+  addProductToCart = (product) => {
     const { cartProducts } = this.state;
     cartProducts.push(product);
     this.setState({ cartProducts });
@@ -21,8 +21,10 @@ class App extends Component {
   render() {
     return(
       <div>
-        <Products addItemToCart={this.addItemToCart} />
-        <Cart products={this.state.cartProducts} />
+        <div className="content">
+          <Products addProductToCart={this.addProductToCart} />
+          <Cart products={this.state.cartProducts} />
+        </div>
       </div>
     );
   }

@@ -1,10 +1,8 @@
-// Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
 import PRODUCTS from '../Data';
 import './index.css';
-
 
 class Products extends Component {
   static propTypes = {
@@ -12,14 +10,14 @@ class Products extends Component {
   };
 
   addProduct = (product) => {
-    this.props.addItemToCart(product);
+    this.props.addProductToCart(product);
   }
 
   render() {
     return (
       <div className="items">
         {map(PRODUCTS, (product)=> (
-          <div key={product.id} className={product.name}>
+          <div key={product.id} className="item">
             <h1>{product.name}</h1>
             <h4>{product.description}</h4>
             <h5>{product.price}</h5>
