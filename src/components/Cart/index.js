@@ -8,22 +8,25 @@ class Cart extends Component {
   static propTypes = {
     products: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
-  
+
   render() {
     return(
       <div className="cart">
-        <h1>My Cart</h1>
-        <div className="cart-items">
-          {map(this.props.products, (product, index) => (
-            <div className="cart-item" key={`${product.id}${index}`}>
-              <p>{product.name}</p>
-              <p>{product.price}</p>
-              <img src={product.img} className="card-img" />
-            </div>
-          ))}
+        <div className="all-cart-items">
+          <h1 id="cart-title">My Cart</h1>
+          <div className="cart-items">
+            {map(this.props.products, (product, index) => (
+              <div className="cart-item" key={`${product.id}${index}`}>
+                <p>{product.name}</p>
+                <p>{product.price}</p>
+                <img src={product.img} className="card-img" />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="total-price">
-          <h5>Total price: {this.getTotalPrice}</h5>
+          <hr />
+          <h5 id="total-price">Total price:</h5>
         </div>
       </div>
     )

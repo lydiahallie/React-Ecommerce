@@ -1,11 +1,50 @@
 .cart {
-  height: 40em;
-  width: 30em;
-  background-color: green;
+  border-top: 4px solid black;
+  display: flex;
+}
+
+#cart-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.cart-item {
+  height: 30em;
+  width: 20em;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+  padding: 1em;
+  background-color: white;
 }
 
 .cart-items {
-  height: 30em;
-  background-color: blue;
-  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  min-height: 30em;
+}
+
+#total-price {
+  font-family: 'Lato', sans-serif;
+}
+.total-price {
+  width: 30vw;
+  background-color: #FFF;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 3em;
+}
+
+.items-title {
+  text-align: center;
+}
+
+img {
+  height: 20em;
 }

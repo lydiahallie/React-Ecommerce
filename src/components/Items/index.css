@@ -1,3 +1,7 @@
+.items-wrapper {
+  border-top: 4px solid black;
+}
+
 .item {
   height: 30em;
   width: 20em;
@@ -24,16 +28,6 @@
 
 img {
   height: 20em;
-}
-
-.add-btn {
-  height: 20em;
-  width: 20em;
-  display: none;
-}
-
-item:hover + div {
-  display: block;
 }
 
 #product-name {

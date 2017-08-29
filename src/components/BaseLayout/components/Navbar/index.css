@@ -21,4 +21,11 @@
   text-decoration: none;
   margin: 0 1em;
   color: white;
+  transition: 0.5s;
+}
+
+.navbar li a:hover {
+  background: transparent;
+  color: black;
+  transition: 0.5s;
 }

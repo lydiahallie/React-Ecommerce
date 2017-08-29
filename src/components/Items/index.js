@@ -20,7 +20,7 @@ class Products extends Component {
 
   render() {
     return (
-      <div>
+      <div className="items-wrapper">
         <div className="items-title">
           <h4>All Items</h4>
         </div>
