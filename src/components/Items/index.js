@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import map from 'lodash/map';
 import PRODUCTS from '../Data';
 import { Section, Icon, Col } from 'react-materialize';
+import ReactCSSTranistionGroup from 'react-addons-css-transition-group';
 import './index.css';
 
 class Products extends Component {

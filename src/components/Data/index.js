@@ -6,7 +6,7 @@ const products = [
     price: 16.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623090_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?3139854348",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     price: 4.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623091_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?2480366933",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const products = [
     price: 14.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623087_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?964812911",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const products = [
     price: 20.00,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623085_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?2436126559",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     price: 4.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623088_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?8769278597",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const products = [
     price: 19.99,
     gender: "women",
     type: "blouse",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/45/elan-1623092_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?4620512067",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const products = [
     price: 6.00,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623084_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?9633736876",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     price: 14.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623089_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?1042724615",
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const products = [
     price: 20.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623083_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?4788105246",
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const products = [
     price: 4.99,
     gender: "women",
     type: "shirt",
-    img: "https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623086_960_720.jpg",
+    img: "http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?7978956723",
   },
   {
     id: 11,
