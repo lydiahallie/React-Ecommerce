@@ -1,4 +1,4 @@
-.items-wrapper {
+.womens-products {
   border-top: 4px solid black;
 }
 
@@ -67,10 +67,11 @@ i:hover {
   cursor: pointer;
 }
 
-.items-title {
+.womens-title {
   margin: 3em 0;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
+  text-align: center;
 }

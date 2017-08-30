@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
 import PRODUCTS from '../Data';
-import { Section, Icon, Col } from 'react-materialize';
-import ReactCSSTranistionGroup from 'react-addons-css-transition-group';
+import { Icon } from 'react-materialize';
 import './index.css';
 
 class Products extends Component {
@@ -13,10 +12,6 @@ class Products extends Component {
 
   addProduct = (product) => {
     this.props.addProductToCart(product);
-  }
-
-  getPrice = () => {
-    this.props.getTotalPrice()
   }
 
   render() {
@@ -36,7 +31,7 @@ class Products extends Component {
                 <h4 id="product-description">{product.description}</h4>
                 <div className="price-add">
                   <h5 id="product-price">${product.price}</h5>
-                  <Icon small onClick={() => this.addProduct(product)} id="add-icon">add_shopping_cart</Icon>
+                  <Icon small onClick={product.inCart === true} id="add-icon">add_shopping_cart</Icon>
                 </div>
               </div>
             </div>

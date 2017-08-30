@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Lato', sans-serif;
+  background: transparent;
 }
 
 #header-title {

@@ -1,11 +1,26 @@
-.wrapper-header {
-  display: flex;
-  flex-direction: column;
-  background: url('http://www194.lunapic.com/do-not-link-here-use-hosting-instead/15028111535986?1936211921');
-  background-size: cover;
-  background-position: center;
-}
-
 .content {
   background-color: #F9F6F6;
+}
+
+.first-header {
+  background: url('https://preview.ibb.co/j8nRCQ/fashion2.jpg');
+}
+
+.second-header {
+  background: url('https://preview.ibb.co/fm4Cmk/fashion3.jpg');
+}
+
+.third-header {
+  background: url('https://preview.ibb.co/bMsCK5/fashion5.jpg');
+}
+
+.fourth-header {
+  background: url('https://preview.ibb.co/gtsZXQ/fashion6.jpg');
+}
+
+.first-header, .second-header, .third-header, .fourth-header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
 }
