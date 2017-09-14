@@ -11,6 +11,8 @@ import Cart from './components/Cart';
 import BaseLayout from './components/BaseLayout';
 import Women from './components/Women';
 import Men from './components/Men';
+import Clothes from './components/Clothes';
+import Accessories from './components/Accessories';
 import ShowProduct from './components/ShowProduct';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -22,6 +24,8 @@ ReactDOM.render(
         <Route path="/cart" component={Cart} />
         <Route path="/women" component={Women}  />
         <Route path="/men" component={Men} />
+        <Route path="/clothes" component={Clothes}  />
+        <Route path="/accessories" component={Accessories} />
         <Route exact path="/products/:id" component={ShowProduct} />
       </Switch>
     </BaseLayout>

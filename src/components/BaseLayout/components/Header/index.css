@@ -27,6 +27,7 @@ p a {
   padding: 1em 2em;
   border-radius: 5px;
   transition: 0.5s;
+  height: 1em;
 }
 
 p a:hover {

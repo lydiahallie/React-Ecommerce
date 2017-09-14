@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PRODUCTS from '../Data';
+import map from 'lodash/map';
 import {Icon} from 'react-materialize';
 import './index.css';
 
@@ -9,25 +10,19 @@ class CartProducts extends Component {
     addItemToCart: PropTypes.func.isRequired,
   };
 
-  addProduct = (product) => {
-    this.props.addProductToCart(product);
-  }
-
-  getPrice = () => {
-    this.props.getTotalPrice()
-  }
 
   render() {
+    console.log(this.props.cartProducts)
     return(
-        <div className="items">
-          {PRODUCTS.map((product) => {
-            if (product.cart) {
-              return(
-                <div>{product.name}</div>
-              )
-            }
-          })}
-        </div>
+      <div>
+        <h1>This is the cart</h1>
+          <div className="items">
+            {map(this.props.cartProducts, (product) => {
+              console.log(this.props.cartProducts);
+              <h1>{product.name}</h1>
+            })}
+          </div>
+      </div>
     );
   }
 }

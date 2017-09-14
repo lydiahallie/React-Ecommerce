@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
-import PRODUCTS from '../Data';
+import products from '../Data';
 import { Icon } from 'react-materialize';
 import './index.css';
 import { Link } from 'react-router-dom';
 
 class Products extends Component {
-  static propTypes = {
-    addItemToCart: PropTypes.func.isRequired,
-  };
-
-  addProduct = (product) => {
-    product.inCart === true;
-  }
-
   render() {
     return (
       <div className="items-wrapper">
@@ -22,7 +14,7 @@ class Products extends Component {
           <h4>All Items</h4>
         </div>
         <div className="items">
-          {map(PRODUCTS, (product)=> (
+          {map(products, (product)=> (
             <div key={product.id} className="item">
               <Link to={`/products/${product.id}`}>
               <div className="product-img">
@@ -35,7 +27,7 @@ class Products extends Component {
               </Link>
               <div className="price-add">
                 <h5 id="product-price">${product.price}</h5>
-                <Icon small onClick={this.addProduct} id="add-icon">add_shopping_cart</Icon>
+                <Icon small id="add-icon">add_shopping_cart</Icon>
               </div>
             </div>
           ))}
