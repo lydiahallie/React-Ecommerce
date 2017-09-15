@@ -12,24 +12,33 @@ class ShowProduct extends Component {
     return (
       <div className="show-product">
         <div className="item-wrapper">
-          <div className="col s12 m4 offset-m2">
+          <div className="item-image">
             <img className="product-image" src={currentProduct.img} alt="product" />
           </div>
 
-          <div className="col s12 m6">
+          <div className="item-name">
             <div className="product-info">
               <h3 id="product-name">{currentProduct.name}</h3>
             </div>
 
             <div className="product-bio">
               <p id="product-description">{currentProduct.description}</p>
-              <p id="product-price">Price: ${currentProduct.price}</p>
+              <p id="product-price">${currentProduct.price}</p>
               <Icon small id="add-icon">add_shopping_cart</Icon>
+            </div>
+            <div className="product-review">
+              <div className="stars">
+                <Icon small id="add-icon">star</Icon>
+                <Icon small id="add-icon">star</Icon>
+                <Icon small id="add-icon">star</Icon>
+                <Icon small id="add-icon">star</Icon>
+                <Icon small id="add-icon">star_half</Icon>
+              </div>
             </div>
           </div>
         </div>
         <div className="similar-products">
-          <h5>Similar Products</h5>
+          <h5>You might also like</h5>
           {PRODUCTS.map((product) => {
             if (
               product.gender === currentProduct.gender

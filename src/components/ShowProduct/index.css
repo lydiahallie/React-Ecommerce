@@ -47,6 +47,7 @@
   margin: .5em 0;
 }
 
+
 #product-description {
   font-size: 1em;
   font-family: 'Lato', sans-serif;
@@ -57,4 +58,26 @@
 
 #product-price {
   font-size: 1em;
+}
+
+.show-product .product-image {
+  height: 35em;
+}
+
+.item-name #product-name {
+  font-size: 40px;
+  border: none;
+}
+
+.item-name #product-description {
+  font-size: 30px;
+}
+
+.item-name #product-price {
+  font-size: 20px;
+  color: grey;
+}
+
+.stars {
+  display: flex;
 }
