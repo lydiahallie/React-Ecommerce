@@ -1,4 +1,6 @@
 E-Commerce Website
 ===
 
-<video width="320" height="240" src="Ecommerce.mov"></video>
+<video width="400" controls autoplay>
+    <source src="/Ecommerce.mov" type="video/mp4">
+</video>
