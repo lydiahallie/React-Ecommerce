@@ -1,6 +1,6 @@
 E-Commerce Website
 ===
 
-<video width="400" controls autoplay>
-    <source src="/Ecommerce.mov" type="video/mp4">
-</video>
+Filter through items from own API, add them to your cart, and see similar items.
+
+![demo](Ecommerce.mov)

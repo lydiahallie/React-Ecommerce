@@ -6,7 +6,6 @@ import './index.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from './components/App';
-import Contact from './components/Contact';
 import Cart from './components/Cart';
 import BaseLayout from './components/BaseLayout';
 import Women from './components/Women';

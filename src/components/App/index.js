@@ -1,20 +1,13 @@
 // Dependencies
-import React, { Component } from 'react';
-import Cart from '../Cart';
+import React from 'react';
+//Internals
 import Products from '../Items';
-import map from 'lodash/map';
 import './index.css';
 
-class App extends Component {
-  render() {
-    return(
-      <div>
-        <div className="content">
-          <Products />
-        </div>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="content">
+    <Products />
+  </div>
+);
 
 export default App;

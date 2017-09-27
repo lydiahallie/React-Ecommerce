@@ -1,7 +1,6 @@
 // Dependencies
 import React, { Component } from 'react';
 // Externals
-import Contact from '../Contact';
 import Navbar from './components/NavBar';
 import Header from './components/Header';
 import Footer from './components/Footer';

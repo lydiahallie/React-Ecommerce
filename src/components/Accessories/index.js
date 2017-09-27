@@ -1,8 +1,9 @@
+//Dependencies
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import PRODUCTS from '../Data';
 import {Icon} from 'react-materialize';
 import { Link } from 'react-router-dom';
+//Internals
+import PRODUCTS from '../Data';
 import './styles.css';
 
 class Accessories extends Component {
@@ -39,7 +40,5 @@ class Accessories extends Component {
     );
   }
 }
-
-
 
 export default Accessories;

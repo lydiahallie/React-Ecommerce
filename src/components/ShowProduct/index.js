@@ -1,9 +1,11 @@
+//Dependencies
 import React, { Component } from 'react';
 import find from 'lodash/find';
-import PRODUCTS from '../Data';
 import { Link } from 'react-router-dom';
-import './index.css';
 import { Icon } from 'react-materialize';
+//Internals
+import PRODUCTS from '../Data';
+import './index.css';
 
 class ShowProduct extends Component {
   render () {
@@ -15,12 +17,10 @@ class ShowProduct extends Component {
           <div className="item-image">
             <img className="product-image" src={currentProduct.img} alt="product" />
           </div>
-
           <div className="item-name">
             <div className="product-info">
               <h3 id="product-name">{currentProduct.name}</h3>
             </div>
-
             <div className="product-bio">
               <p id="product-description">{currentProduct.description}</p>
               <p id="product-price">${currentProduct.price}</p>
