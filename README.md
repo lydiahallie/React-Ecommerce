@@ -1,6 +1,6 @@
 E-Commerce Website
 ===
 
-Filter through items from own API, add them to your cart, and see similar items.
+You may filter through items from your own API, add get them added to your cart, and see those similar items.
 
 ![demo](ecommerce.gif)
