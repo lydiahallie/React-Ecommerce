@@ -9,10 +9,7 @@ import "./index.css";
 
 class ShowProduct extends Component {
 	render() {
-		const product = find(PRODUCTS, [
-			"id",
-			parseInt(this.props.match.params.id),
-		]);
+		const product = find(PRODUCTS, ["id", Number(this.props.match.params.id)]);
 		const currentProduct = product;
 		return (
 			<div className="show-product">
